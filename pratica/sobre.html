@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Meu Portfólio</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; background: #f4f4f4; }
+        .skip-link { position: absolute; top: -40px; left: 0; background: #000; color: #fff; padding: 8px; z-index: 100; }
+        .skip-link:focus { top: 0; }
+        *:focus { outline: 3px solid #0056b3; outline-offset: 2px; }
+        
+        header { background: #222; color: #fff; padding: 1rem; position: sticky; top: 0; z-index: 10; }
+        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; }
+        nav h1 { font-size: 1.5rem; }
+        nav ul { list-style: none; display: flex; gap: 1.5rem; }
+        nav a { color: #fff; text-decoration: none; }
+        
+        main { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
+        .content-box { background: #fff; padding: 2rem; border-radius: 8px; }
+        .profile-img { width: 300px; height: 300px; object-fit: cover; border-radius: 50%; border: 5px solid #222; display: block; margin: 0 auto 1rem; }
+        
+        footer { background: #222; color: #fff; text-align: center; padding: 1.5rem; margin-top: 2rem; }
+        
+        @media (max-width: 768px) { nav { flex-direction: column; } nav ul { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+    <header>
+        <nav aria-label="Menu Principal">
+            <h1>Meu Portfólio</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html" aria-current="page">Sobre Mim</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <section class="content-box">
+            <h2>Sobre Mim</h2>
+            <img src="https://via.placeholder.com/300x300/007bff/fff?text=Foto+Perfil" alt="Foto de perfil do desenvolvedor" class="profile-img">
+            
+            <p>Olá! Meu nome é <strong>[Seu Nome]</strong>, tenho 25 anos e sou desenvolvedor web.</p>
+            <br>
+            <p>Estou cursando [Seu Curso/Formação] e tenho paixão por criar soluções digitais que impactem a vida das pessoas.</p>
+            <br>
+            <h3>Minha História</h3>
+            <p>Comecei a programar há 2 anos e desde então venho estudando continuamente tecnologias voltadas para o frontend e backend.</p>
+            <br>
+            <p>Fora do código, gosto de ler livros, jogar jogos eletrários e praticar exercícios físicos.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Portfólio.</p>
+    </footer>
+</body>
+</html>

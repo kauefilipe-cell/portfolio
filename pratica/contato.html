@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Meu Portfólio</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; background: #f4f4f4; }
+        
+        /* Skip Link para Acessibilidade */
+        .skip-link { position: absolute; top: -40px; left: 0; background: #000; color: #fff; padding: 8px; z-index: 100; }
+        .skip-link:focus { top: 0; }
+        
+        /* Foco no teclado */
+        *:focus { outline: 3px solid #0056b3; outline-offset: 2px; }
+        
+        /* Header */
+        header { background: #222; color: #fff; padding: 1rem; position: sticky; top: 0; z-index: 10; }
+        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; }
+        nav h1 { font-size: 1.5rem; }
+        nav ul { list-style: none; display: flex; gap: 1.5rem; }
+        nav a { color: #fff; text-decoration: none; }
+        nav a:hover { color: #ddd; }
+        
+        /* Main */
+        main { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
+        .form-container { background: #fff; padding: 2rem; border-radius: 8px; }
+        
+        /* Formulário */
+        .form-group { margin-bottom: 1.5rem; }
+        label { display: block; margin-bottom: 0.5rem; font-weight: bold; }
+        input, textarea, select { width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; }
+        textarea { resize: vertical; min-height: 150px; }
+        
+        /* Botões */
+        .buttons { display: flex; gap: 1rem; }
+        button { padding: 0.8rem 1.5rem; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem; font-weight: bold; }
+        button[type="submit"] { background: #28a745; color: #fff; }
+        button[type="submit"]:hover { background: #218838; }
+        button[type="reset"] { background: #dc3545; color: #fff; }
+        button[type="reset"]:hover { background: #c82333; }
+        
+        /* Contato Info */
+        .contact-info { margin-top: 2rem; padding: 1.5rem; background: #e9ecef; border-radius: 8px; }
+        .contact-info ul { list-style: none; }
+        .contact-info li { margin-bottom: 0.5rem; }
+        
+        /* Footer */
+        footer { background: #222; color: #fff; text-align: center; padding: 1.5rem; margin-top: 2rem; }
+        footer a { color: #fff; text-decoration: underline; }
+        
+        /* Responsivo */
+        @media (max-width: 768px) {
+            nav { flex-direction: column; }
+            nav ul { flex-direction: column; text-align: center; }
+            .buttons { flex-direction: column; }
+            button { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+    <header>
+        <nav aria-label="Menu Principal">
+            <h1>Meu Portfólio</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Mim</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="contato.html" aria-current="page">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <section class="form-container">
+            <h2>Fale Comigo</h2>
+            <p>Preencha o formulário abaixo ou entre em contato pelas redes sociais.</p>
+            <br>
+            
+            <!-- Formulário -->
+            <form action="#" method="post" aria-label="Formulário de contato">
+                <!-- Campo 1: Nome (type="text") -->
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                </div>
+                
+                <!-- Campo 2: Email (type="email") -->
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+                
+                <!-- Campo 3: Assunto (select) -->
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="proposta">Proposta de Trabalho</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                
+                <!-- Campo 4: Mensagem (textarea) -->
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." required></textarea>
+                </div>
+                
+                <!-- Dois Botões -->
+                <div class="buttons">
+                    <button type="submit">Enviar Mensagem</button>
+                    <button type="reset">Limpar Formulário</button>
+                </div>
+            </form>
+        </section>
+        
+        <!-- Informações de Contato -->
+        <section class="contact-info">
+            <h3>Outras formas de contato:</h3>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:meuemail@exemplo.com">meuemail@exemplo.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com" target="_blank">linkedin.com/in/meuperfil</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com" target="_blank">github.com/meuusuario</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+        <p>
+            <a href="index.html">Voltar ao Início</a>
+        </p>
+    </footer>
+</body>
+</html>
