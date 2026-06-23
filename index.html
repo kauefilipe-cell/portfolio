@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Seu Nome" />
+    <title>Início</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Menu principal">
+            <a href="index.html" class="logo">Kauê <span>Nascimento</span></a>
+            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+            <ul class="nav-menu" id="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Mim</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <img src="img/perfil.jpg" alt="Foto de perfil de Kauê Filipe" class="profile-photo" width="160"
+                    height="160" />
+                <h1 id="hero-title">Olá, eu sou <span>Kauê Nascimento</span></h1>
+                <p>Desenvolvedor em formação, que busca melhorar na área.</p>
+                <div class="btn-group">
+                    <a href="projetos.html" class="btn btn-primary">Ver Projetos</a>
+                    <a href="contato.html" class="btn btn-outline">Entre em Contato</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" aria-labelledby="sobre-title">
+            <h2 class="section-title" id="sobre-title">Apresentação</h2>
+            <p class="section-subtitle">
+                Sou estudante de Tecnologia em Sistemas para Internet no IFSP e formado no Curso Técnico em Informática.
+                Tenho interesse em desenvolvimento Back-End, utilizando PHP, MySQL e JavaScript para construir
+                aplicações web, gerenciar bancos de dados e desenvolver soluções funcionais.
+            </p>
+
+            <article class="card fade-in">
+                <h3>Resumo Profissional</h3>
+                <p>
+                    Desenvolvo projetos focados em sistemas web, integração com bancos de dados
+                    e lógica de programação. Tenho interesse em desenvolvimento Back-End,
+                    arquitetura de software e boas práticas de programação, sempre buscando
+                    aprender novas tecnologias e evoluir como desenvolvedor.
+                </p>
+            </article>
+        </section>
+
+        <section class="container" aria-labelledby="techs-title">
+            <h2 class="section-title" id="techs-title">Tecnologias favoritas</h2>
+            <p class="section-subtitle">As ferramentas com as quais mais gosto de trabalhar.</p>
+
+            <div class="grid grid-3">
+                <article class="card">
+                    <h3>C</h3>
+                    <p>Conhecimentos em lógica de programação, estruturas de dados e
+                        desenvolvimento de algoritmos.</p>
+                </article>
+                <article class="card">
+                    <h3>MySQL</h3>
+                    <p>Modelagem, criação e gerenciamento de bancos de dados relacionais para armazenamento e consulta
+                        eficiente de dados.</p>
+                </article>
+                <article class="card">
+                    <h3>JavaScript</h3>
+                    <p>Criação de interatividade e funcionalidades para tornar aplicações web
+                        mais dinâmicas e intuitivas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container" aria-labelledby="destaque-title">
+            <h2 class="section-title" id="destaque-title">Projetos em destaque</h2>
+            <p class="section-subtitle">Alguns dos trabalhos mais recentes — veja todos na página de projetos.</p>
+
+            <div class="grid grid-3">
+                <article class="project-card">
+                    <img src="img/projeto1.jpeg" alt="Simulador de Estoque e Gerenciamento Empresarial"
+                        loading="lazy" />
+                    <div class="project-body">
+                        <h3>Simulador de Estoque e Gerenciamento Empresarial</h3>
+                        <p>Aplicação web feito para o TCC do Curso Integrado ao Ensino Médio.</p>
+                        <a href="projetos.html" class="btn btn-outline">Detalhes</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="img/projeto2.png" alt="Projeto Loja de Jogos" loading="lazy" />
+                    <div class="project-body">
+                        <h3>Projeto Loja de Jogos</h3>
+                        <p>Projeto final da matéria Introdução a Programação de Computadores - 1º Semestre.</p>
+                        <a href="projetos.html" class="btn btn-outline">Detalhes</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Kauê Filipe Nascimento de Oliveira</h4>
+                    <p>Desenvolvedor fullstack em formação no IFSP.</p>
+                </div>
+                <div>
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre Mim</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="habilidades.html">Habilidades</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Redes sociais</h4>
+                    <div class="social" aria-label="Redes sociais">
+                        <a href="https://github.com/kauefilipe-cell" target="_blank" rel="noopener"
+                            aria-label="GitHub">GH</a>
+                        <a href="https://www.linkedin.com/in/kauêoliveira/" target="_blank" rel="noopener"
+                            aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">© 2026 Kauê Nascimento - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <button class="to-top" aria-label="Voltar ao topo">↑</button>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

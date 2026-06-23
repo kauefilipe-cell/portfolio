@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Menu principal">
+      <a href="index.html" class="logo">Kauê <span>Nascimento</span></a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+      <ul class="nav-menu" id="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre Mim</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="habilidades.html">Habilidades</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="container" aria-labelledby="contato-title">
+      <h1 class="section-title" id="contato-title">Vamos conversar</h1>
+      <p class="section-subtitle">
+        Tem uma proposta, projeto ou apenas quer trocar uma ideia?
+        Preencha o formulário abaixo ou me encontre nas redes sociais.
+      </p>
+
+      <div class="contato-grid">
+        <!-- Formulário visual (sem envio real) -->
+        <form class="form" aria-labelledby="form-title"
+          onsubmit="event.preventDefault(); alert('Formulário apenas visual - nada foi enviado.');">
+          <h2 id="form-title" style="margin-bottom: 16px;">Envie uma mensagem</h2>
+
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto" required>
+              <option value="">Selecione um assunto</option>
+              <option value="proposta">Proposta de trabalho</option>
+              <option value="parceria">Parceria</option>
+              <option value="duvida">Dúvida sobre projetos</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-clear">Limpar</button>
+          </div>
+        </form>
+
+        <!-- Informações de contato -->
+        <aside class="about-side" aria-label="Informações de contato">
+          <h3>Informações</h3>
+          <ul>
+            <li><strong>E-mail:</strong> kaue.filipe@aluno.ifsp.edu.br</li>
+            <li><strong>Cidade:</strong> Araraquara, SP</li>
+            <li><strong>Instituição:</strong> IFSP</li>
+          </ul>
+
+          <h3 style="margin-top:20px;">Redes Sociais</h3>
+          <div class="social">
+            <a href="https://github.com/kauefilipe-cell" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+            <a href="https://www.linkedin.com/in/kauêoliveira/" target="_blank" rel="noopener"
+              aria-label="LinkedIn">in</a>
+            <a href="https://www.instagram.com/kau.eu_/" target="_blank" rel="noopener" aria-label="Instagram">Ig</a>
+          </div>
+
+          <h3 style="margin-top:20px;">Disponibilidade</h3>
+          <p style="color: var(--text-muted);">
+            Aberto para estágios, freelances e oportunidades de aprendizado em
+            desenvolvimento Back-End.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Kauê Filipe Nascimento de Oliveira</h4>
+          <p>Desenvolvedor fullstack em formação no IFSP.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Mim</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <!--<div>
+                    <h4>Redes sociais</h4>
+                    <div class="social" aria-label="Redes sociais">
+                        <a href="https://github.com/kauefilipe-cell" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+                        <a href="https://www.linkedin.com/in/kauêoliveira/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>-->
+      </div>
+      <p class="copyright">© 2026 Kauê Nascimento - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Voltar ao topo">↑</button>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

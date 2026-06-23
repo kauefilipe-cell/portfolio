@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Mim</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Menu principal">
+      <a href="index.html" class="logo">Kauê <span>Nascimento</span></a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+      <ul class="nav-menu" id="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre Mim</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="habilidades.html">Habilidades</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="container" aria-labelledby="sobre-title">
+      <h1 class="section-title" id="sobre-title">Sobre Mim</h1>
+      <p class="section-subtitle">
+        Conheça um pouco da minha história, dos meus objetivos e do que me motiva no
+        desenvolvimento Web.
+      </p>
+
+      <div class="about-grid" style="margin-top: 28px;">
+        <div>
+          <article id="historia" class="card fade-in">
+            <h2>História Acadêmica</h2>
+            <p>
+              Comecei minha jornada na tecnologia ainda no ensino médio, quando descobri o
+              gosto por criar páginas Web. Hoje sou estudante do curso de Tecnologia em Sistemas para Internet no
+              <a href="https://www.ifsp.edu.br" target="_blank" rel="noopener">IFSP</a>,
+              onde tenho aprofundado meus conhecimentos em desenvolvimento.
+            </p>
+          </article>
+
+          <article id="objetivos" class="card fade-in" style="margin-top:20px;">
+            <h2>Objetivos Profissionais</h2>
+            <p>
+              Meu objetivo é atuar como desenvolvedor Back-End, desenvolvendo sistemas robustos, escaláveis e seguros,
+              com foco em APIs e lógica de servidor. Tenho interesse especial em bancos de dados, modelagem de dados e
+              otimização de consultas, buscando garantir eficiência e confiabilidade no armazenamento e processamento
+              das informações.
+            </p>
+          </article>
+
+          <article id="trajetoria" class="card fade-in" style="margin-top:20px;">
+            <h2>Linha do tempo</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <time>2022</time>
+                <h3>Ingresso no IFSP</h3>
+                <p>Iniciei o curso de Curso Técnico em Informática Integrado ao Ensino Médio.</p>
+              </div>
+              <div class="timeline-item">
+                <time>2023-24</time>
+                <h3>Primeiros projetos acadêmicos</h3>
+                <p>Desenvolvi sites e protótipos como parte das disciplinas do curso.</p>
+              </div>
+              <div class="timeline-item">
+                <time>2025</time>
+                <h3>Finalizo o Ensino Médio</h3>
+                <p>Desenvolvi um TCC, que consiste em um sistema web como parte de finalizar o curso.</p>
+              </div>
+              <div class="timeline-item">
+                <time>2026</time>
+                <h3>Ingresso na Faculdade</h3>
+                <p>Iniciei o curso de Tecnologia em Sistemas para Internet.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <aside class="about-side" id="curiosidades" aria-labelledby="curiosidades-title">
+          <h3 id="curiosidades-title">Curiosidades & Interesses</h3>
+          <ul>
+            <li>Foco em desenvolvimento Back-End</li>
+            <li>Gosto de jogos de narrativa interativa</li>
+            <li>Escuto rap enquanto programo</li>
+            <li>Interesse por banco de dados</li>
+            <li>Realizo Tiro de Guerra das 6h as 8h</li>
+          </ul>
+
+          <h3 style="margin-top:20px;">Idiomas</h3>
+          <ul>
+            <li>Português - Nativo</li>
+            <li>Inglês - Intermediário (Cursando)</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Kauê Filipe Nascimento de Oliveira</h4>
+          <p>Desenvolvedor fullstack em formação no IFSP.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Mim</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Redes sociais</h4>
+          <div class="social" aria-label="Redes sociais">
+            <a href="https://github.com/kauefilipe-cell" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+            <a href="https://www.linkedin.com/in/kauêoliveira/" target="_blank" rel="noopener"
+              aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Kauê Nascimento - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Voltar ao topo">↑</button>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
